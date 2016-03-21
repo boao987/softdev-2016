@@ -18,14 +18,15 @@ var animateRect = function(){
     var height = 50;
     
     var animCode = function(){
-        ctx.clearRect(0,0,500,500);//I dont know why this isn't working
+       // ctx.clearRect(0,0,500,500);//I dont know why this isn't working
         cx+=dx;
         cy+=dy;
         
         ctx.fillStyle = "#ff0000";
         ctx.rect(cx,cy,width,height);
         ctx.fill();
-        
+        ctx.clearRect(0,0,500,500);//I dont know why this isn't working
+
         
         if(cx<=0||cx>=c.width){
             dx *= -1;
