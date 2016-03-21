@@ -25,6 +25,8 @@ for (var i=0; i< state.length; i++){
     delegateData[i] = info;
 }
 
+//var d3 = document.getElementById("d3");
+
 var graph = d3.select("body").select(".chart")
               .data(delegateData)
               .enter()
@@ -41,8 +43,9 @@ graph.append("p")
 graph.append("div")
      .attr("class","bar")
      .style("width", function(d){
-        return d[1]*5 + "px";
+        return d[1]*3 + "px";
      })
+     .style("height", "15px")
      .style("background-color","green")
      .text(function(d){
          return d[1];
@@ -51,8 +54,9 @@ graph.append("div")
 graph.append("div")
      .attr("class","bar")
      .style("width", function(d){
-        return d[2]*5 + "px";
+        return d[2]*3 + "px";
      })
+     .style("height", "15px")
      .style("background-color","green")
      .text(function(d){
          return d[2];
@@ -61,8 +65,9 @@ graph.append("div")
 graph.append("div")
 	.attr("class","bar")
 	.style("width", function(d){
-		return (d[2]+d[1])*5 + "px";
+		return (d[2]+d[1])*3 + "px";
 	})
+	.style("height", "15px")
 	.style("background-color","blue")
 	.text(function(d){
 		return d[2]+d[1];
