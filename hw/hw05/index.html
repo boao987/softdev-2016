@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-    
-        <title>
-            HW 05 - Delegate Graph Democrats
-        </title>
-        
-        <center>
-            <h1>Delegates for Democrats</h1>
-        </center>
-         <script type="text/javascript" src="../d3/d3.v3.min.js" charset="utf-8" id="d3"></script>
-    </head>
-    
-    <body>
-        
-        <center>
-        
-            <p>Green - Alloted</p>
-            <p>Purple - Unalloted</p>
-            <p>Blue - Total</p>
-            
-            <h3>Statistics</h3>
-            <p>Total Delegates - 4765</p>
-            <p>Total Pledged - 4051</p>
-            <p>Total Unpledged - 714</p>
-            
-            <link rel="stylesheet" href="css/style.css"></link>
-        </center>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
-</html> 
+  <head>
+    <title>
+      Republican and Democratic Delegates
+    </title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Republican Party Delegates</h1>
+      <h3>Sources</h3>
+      <a href="http://www.thegreenpapers.com/P16/R-PU.phtml">Republican</a>
+      <a href="http://www.thegreenpapers.com/P16/D-PU.phtml">Democrat</a>
+    </div>
+    <div class="button">
+      <br><br><br><br>
+      <h3>Current Party:</h3>
+      <h2>Republican</h2>
+      <div class="img">
+      <img src="rep.gif">
+    </div>
+      <h3>Key</h3>
+      <div class="bar" style="background-color:red">Republican Allotted</div>
+      <div class="bar" style="background-color:blue">Democrat Allotted</div>
+      <div class="bar" style="background-color:gray">Unallotted</div>
+      <br>
+      <button id="switch">Change Party</button>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/style.css"></link>
+  </body>
+</html>
