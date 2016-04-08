@@ -16,7 +16,7 @@ def execTime(f):
     return inner
     
     
-#@nameArgLogger
+@nameArgLogger
 @execTime
 def fib(n):
     if (n <= 2):
